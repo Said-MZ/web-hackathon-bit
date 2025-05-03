@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ModeToggle } from "./ui/mode-toggle";
 
 const links = [
   {
@@ -195,6 +196,9 @@ export default function FooterSection() {
           {" "}
           © {new Date().getFullYear()} Tailark, All rights reserved
         </span>
+      </div>
+      <div className="z-10  ml-12">
+        <ModeToggle />
       </div>
     </footer>
   );
